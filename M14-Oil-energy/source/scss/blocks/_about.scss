@@ -1,0 +1,90 @@
+@import '../vars';
+
+.about {
+	text-align: center;
+	background: linear-gradient(
+			90deg,
+			rgba(200, 20, 20, 0.6) 0%,
+			rgba(255, 60, 0, 0.6) 33.85%,
+			rgba(255, 180, 20, 0.6) 100%
+		),
+		url(../../../images/about-bg.png),
+		lightgray -101.151px -108.602px / 214.59% 218.247% no-repeat;
+	background-position: 28% center;
+	background-size: 210%;
+	background-repeat: no-repeat;
+
+	&-inner {
+		padding: 40px 20px 45px;
+	}
+
+	&-title {
+		color: $light;
+		text-align: center;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: 576px) {
+	.about {
+		&-inner {
+			padding: 60px 20px 65px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.about {
+		background-size: 100%;
+		&-inner {
+			padding: 176px 0px 125px;
+		}
+
+		&-title {
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 40px; /* 125% */
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.about {
+		&-inner {
+			padding: 176px 40px 125px;
+		}
+
+		&-title {
+			font-size: 35px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 45px; /* 125% */
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.about {
+		background-position: 28% center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		&-inner {
+			padding: 176px 150px 125px;
+		}
+
+		&-title {
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 50px; /* 125% */
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: "PT Serif", serif;
+  background-color: yellow;
+}
+
+.header-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-menu-link {
+  color: #171717;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.latest-post-category {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}

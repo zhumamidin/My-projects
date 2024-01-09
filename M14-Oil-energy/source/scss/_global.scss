@@ -1,0 +1,35 @@
+@import '_vars.scss';
+
+body {
+	font-family: $main-font;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 280px;
+	margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		width: 516px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 700px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		width: 960px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		width: 1400px;
+	}
+}

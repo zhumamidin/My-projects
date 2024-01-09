@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Century Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Century Gothic'),
+		url(../source/fonts/CenturyGothic-400.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+	font-style: bold;
+	font-weight: 700;
+	src: local('Century Gothic'),
+		url(../source/fonts/CenturyGothic-700.woff2) format('woff2');
+}

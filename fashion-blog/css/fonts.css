@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Mirlan Sans"), url("../fonts/PTSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), url("../fonts/PTSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Serif"), url("../fonts/PTSerif-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Serif"), url("../fonts/PTSerif-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Serif"), url("../fonts/PTSerif-Regular.woff2") format("woff2");
+}

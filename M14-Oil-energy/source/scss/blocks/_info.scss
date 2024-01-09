@@ -1,0 +1,114 @@
+@import '../vars';
+
+.info {
+	background: linear-gradient(
+			0deg,
+			rgba(255, 135, 30, 0.85) 0%,
+			rgba(255, 135, 30, 0.85) 100%
+		),
+		url(../../../images/info-bg.jpeg),
+		lightgray -444.477px 0px / 239.033% 100% no-repeat;
+	background-position: 28% center;
+	background-size: 400%;
+	background-repeat: no-repeat;
+
+	&-inner {
+		padding: 30px 0 30px;
+	}
+
+	&-title {
+		color: $light;
+	}
+
+	&-list {
+		margin-top: 45px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&-text {
+		color: $light;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		margin-bottom: 40px;
+	}
+
+	&-btn {
+		background: $accent-red;
+	}
+}
+
+@media (min-width: 768px) {
+	.info {
+		&-title {
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 50px;
+		}
+
+		&-title::after {
+			position: absolute;
+			top: 70px;
+			width: 80px;
+			height: 4px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.info {
+		background-position: 28% center;
+		background-size: 150%;
+
+		&-list {
+			flex-direction: row;
+			gap: 50px;
+			padding-top: 40px;
+		}
+
+		&-title::after {
+			top: 70px;
+			width: 80px;
+			height: 4px;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.info {
+		&-inner {
+			padding: 75px 0 100px;
+		}
+		&-list {
+			flex-direction: row;
+			gap: 280px;
+			padding-top: 86px;
+		}
+
+		&-title {
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 50px;
+		}
+
+		&-title::after {
+			position: absolute;
+			top: 70px;
+			width: 80px;
+			height: 4px;
+		}
+
+		&-text {
+			width: 480px;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 40px;
+		}
+	}
+}

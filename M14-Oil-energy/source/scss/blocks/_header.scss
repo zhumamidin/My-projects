@@ -1,0 +1,164 @@
+@import '../vars';
+
+.header {
+	&-inner {
+		padding: 20px 0 30px;
+	}
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-nav-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 135, 30, 0.9);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 35px 10px 30px;
+		text-align: center;
+		transform: translateY(-250%);
+		transition: ease 0.5s;
+	}
+
+	&-nav-link {
+		text-decoration: none;
+		color: $dark;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+
+	&-logo {
+		order: 2;
+	}
+
+	&-card-link {
+		order: 3;
+	}
+
+	&-desk-logo {
+		display: none;
+	}
+	&-nav-btn {
+		padding: 0;
+		margin: 0;
+		width: 22px;
+		height: 20px;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		order: 1;
+		position: relative;
+		z-index: 50;
+	}
+
+	&-btn-img-cross {
+		width: 100%;
+		display: none;
+	}
+
+	&-menu-open &-nav-list {
+		transform: translateY(0);
+	}
+
+	&-menu-open &-btn-img {
+		display: none;
+	}
+
+	&-menu-open &-btn-img-cross {
+		display: block;
+	}
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+	.header {
+		&-nav {
+			align-items: center;
+		}
+
+		&-card-link {
+			display: block;
+		}
+
+		&-logo {
+			order: -1;
+		}
+
+		&-card-link {
+			order: 3;
+			position: relative;
+		}
+
+		&-card-link::after {
+			content: '0';
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			color: #a2a2a2;
+			text-align: center;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 20px;
+			text-transform: uppercase;
+			background: #efefef;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&-nav-btn {
+			display: none;
+			order: 2;
+		}
+
+		&-desk-logo {
+			display: block;
+		}
+
+		&-mobile-logo {
+			display: none;
+		}
+
+		&-btn-img-cross {
+			display: none;
+		}
+
+		&-nav-list {
+			position: static;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: nowrap;
+			gap: 60px;
+			padding: 0 80px;
+			text-align: center;
+			transform: translateY(0);
+			background: none;
+			transition: none;
+		}
+
+		&-menu-open {
+			display: none;
+		}
+	}
+}
