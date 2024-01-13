@@ -14,8 +14,13 @@
         url(../fonts/Inter-700.woff2);
 }
 
-html {
-    box-sizing: border-box;
+html,
+body {
+    position: relative;
+    height: 100%;
+    color: #131313;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
 }
 
 *,
@@ -35,14 +40,6 @@ li {
 
 img {
     max-width: 100%;
-}
-
-
-
-body {
-    color: #131313;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
 }
 
 .btn {
@@ -106,6 +103,10 @@ body {
     margin-bottom: 5px;
 }
 
+.product__descr-inner {
+    width: 420px;
+}
+
 .product__descr-subtitle {
     color: #6F6F6F;
     font-size: 32px;
@@ -120,4 +121,31 @@ body {
 
 .product__descr-text-2 {
     margin-bottom: 80px;
+    line-height: 120%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__list {
+    display: flex;
+    gap: 66px;
 }

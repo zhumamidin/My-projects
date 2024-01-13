@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xiaomi Himo C26</title>
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,29 +38,38 @@
                 <div class="product__inner">
                     <div class="product__descr">
                         <h1 class="product__title">Xiaomi Himo C26</h1>
-                        <p class="product__descr-subtitle">
-                            Электрический велосипед
-                        </p>
-                        <p class="product__descr-text-1">
-                            Полная свобода передвижения и надежный транспорт для путешествий на любые расстояния
-                        </p>
-                        <p class="product__descr-text-2">HIMO C26 – это новый электровелосипед от Xiaomi, который создан
-                            как для езды по городу, так и бездорожью. Он имеет
-                            мощный двигатель и емкий аккумулятор, благодаря которым способен проезжать на одном заряде
-                            до 100 км, что определенно
-                            выше, чем у большинства конкурентов. А большие колеса с пневматическими шинами, дисковые
-                            тормоза, 7-скоростная
-                            трансмиссия и эргономичное сидение делают каждую поездку гораздо приятнее.</p>
-                        <a href="#" class="product__descr-btn btn">ЗАКАЗАТЬ</a>
-                    </div>
-                    <div class="product__images">
-                        <div class="product__img">
-                            <img src="images/product-1.jpg" alt="" class="product__images-img">
-                            <img src="images/product-2.jpg" alt="" class="product__images-img">
-                            <img src="images/product-3.jpg" alt="" class="product__images-img">
-                            <img src="images/product-4.jpg" alt="" class="product__images-img">
-                            <img src="images/product-5.jpg" alt="" class="product__images-img">
+                        <div class="product__descr-inner">
+                            <p class="product__descr-subtitle">
+                                Электрический велосипед
+                            </p>
+                            <p class="product__descr-text-1">
+                                Полная свобода передвижения и надежный транспорт для путешествий на любые расстояния
+                            </p>
+                            <p class="product__descr-text-2">
+                                HIMO C26 – это новый электровелосипед от Xiaomi, который создан
+                                как для езды по городу, так и бездорожью. Он имеет
+                                мощный двигатель и емкий аккумулятор, благодаря которым способен проезжать на одном
+                                заряде
+                                до 100 км, что определенно
+                                выше, чем у большинства конкурентов. А большие колеса с пневматическими шинами, дисковые
+                                тормоза, 7-скоростная трансмиссия и эргономичное сидение делают каждую поездку гораздо
+                                приятнее.</p>
+                            <a href="#" class="product__descr-btn btn">ЗАКАЗАТЬ</a>
                         </div>
+                    </div>
+                    <div class="product__img">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/product-2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/product-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
                         <ul class="product__list">
                             <li class="product__item">
                                 <p class="product__item-text">
@@ -96,6 +105,7 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -104,6 +114,9 @@
     <footer class="footer">
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
