@@ -1,0 +1,79 @@
+@import '../vars';
+
+.bike {
+	padding: 100px 0 150px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column-slider {
+		flex-basis: 630px;
+		margin-left: 30px;
+		max-width: 630px;
+	}
+
+	&__title {
+		font-size: 64px;
+		font-weight: 700;
+		line-height: 77px;
+		margin: 60px 0 5px;
+	}
+
+	&__subtitle {
+		margin: 0 0 60px;
+		font-size: 32px;
+		line-height: 39px;
+		color: $secondary-color;
+		font-weight: 400;
+	}
+
+	&__text {
+		max-width: 420px;
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		margin-top: 80px;
+		display: inline-block;
+		background-color: $dark;
+		color: $light;
+		text-transform: uppercase;
+		padding: 28px 81px;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 22px;
+	}
+
+	&__slider .slick-dots {
+		right: 0;
+		top: 50px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__list-item {
+		min-width: 160px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		min-height: 58px;
+	}
+
+	&__list-num {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__list-text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		margin: auto 0;
+	}
+}

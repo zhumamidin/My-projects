@@ -1,0 +1,32 @@
+@import '../vars';
+
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__menu {
+		margin-right: 70px;
+	}
+
+	&__menu-list {
+		display: flex;
+	}
+
+	&__menu-item + &__menu-item {
+		padding-left: 10px;
+	}
+
+	&__menu-link {
+		text-transform: uppercase;
+		padding: 43px 20px;
+		transition: all 0.3s;
+	}
+
+	&__menu-link:hover {
+		background: $dark;
+		color: $light;
+	}
+}

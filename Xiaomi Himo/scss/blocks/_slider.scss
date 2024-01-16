@@ -1,0 +1,25 @@
+.slick-dots {
+	position: absolute;
+	top: 0;
+}
+
+.slick-dots li + li {
+	padding-top: 10px;
+}
+
+.slick-dots button {
+	font-size: 0;
+	padding: 0;
+	border: none;
+	background-color: $dark;
+	width: 2px;
+	height: 25px;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.3s;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+	background-color: $red-color;
+}
