@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 li {
   padding-left: 0;
 }
@@ -158,4 +162,71 @@ a {
 .slick-dots button:hover,
 .slick-active button {
   background-color: #ff4040;
+}
+
+.info {
+  margin-bottom: 150px;
+}
+.info__inner {
+  display: flex;
+}
+.info__img {
+  margin-right: 60px;
+  flex-basis: 570px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info__list {
+  flex-basis: 490px;
+}
+.info__item + .info__item {
+  margin-top: 50px;
+}
+.info__item-title {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.info__item-text {
+  max-width: 490px;
+}
+
+.characteristics {
+  margin-bottom: 150px;
+}
+.characteristics__title {
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+.characteristics__inner {
+  display: flex;
+}
+.characteristics__img {
+  align-self: center;
+}
+.characteristics__items {
+  flex-basis: 570px;
+  margin-right: 60px;
+}
+.characteristics__list + .characteristics__list {
+  padding-top: 30px;
+}
+.characteristics__item-title {
+  padding: 2px 0 3px;
+  text-transform: uppercase;
+  background-color: #131313;
+  font-weight: 700;
+  color: #fff;
+}
+.characteristics__item-line {
+  display: flex;
+  padding-top: 5px;
+}
+.characteristics__name {
+  flex-basis: 285px;
+  padding-right: 25px;
+}
+.characteristics__descr {
+  flex-basis: 285px;
 }/*# sourceMappingURL=main.css.map */
