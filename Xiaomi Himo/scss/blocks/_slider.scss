@@ -1,0 +1,14 @@
+@import '../vars';
+
+.slider {
+	margin-bottom: 50px;
+
+	&__items .slick-dots {
+		top: 0;
+		left: 0;
+	}
+
+	&__item {
+		padding-left: 50px;
+	}
+}
