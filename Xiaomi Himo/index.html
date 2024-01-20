@@ -20,13 +20,13 @@
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Описание</a>
+                            <a href="#info" class="header__menu-link">Описание</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Характеристики</a>
+                            <a href="#characteristics" class="header__menu-link">Характеристики</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">стоимость</a>
+                            <a href="#price" class="header__menu-link">стоимость</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,7 +54,7 @@
                             выше, чем у большинства конкурентов. А большие колеса с пневматическими шинами, дисковые
                             тормоза, 7-скоростная
                             трансмиссия и эргономичное сидение делают каждую поездку гораздо приятнее.</p>
-                        <a href="#" class="bike__link">ЗАКАЗАТЬ</a>
+                        <a href="#price" class="bike__link">ЗАКАЗАТЬ</a>
                     </div>
                     <div class="bike__column bike__column-slider">
                         <div class="bike__slider">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section class="info">
+        <section class="info" id="info">
             <div class="container">
                 <div class="info__inner">
                     <img class="info__img" src="images/info.jpg" alt="img">
@@ -160,7 +160,7 @@
             </div>
         </section>
 
-        <section class="characteristics">
+        <section class="characteristics" id="characteristics">
             <div class="container">
                 <h4 class="characteristics__title">ХАрактеристики</h4>
                 <div class="characteristics__inner">
@@ -290,7 +290,7 @@
             </div>
         </div>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="price__inner">
                     <form class="price__form">
@@ -306,41 +306,73 @@
                         </p>
                         <div class="price__form-label-box">
                             <label class="price__form-label">
-                                <input type="radio" class="price__form-label-radio">
+                                <input type="radio" name="radio" class="price__form-label-radio">
                                 <div class="price__form-bike">
                                     <img src="images/bike-gray.jpg" alt="" class="price__form-bike-img">
                                     <p class="price__form-bike-price">
-                                        34 999 сом
+                                        <span>34 999 сом</span>
                                     </p>
                                 </div>
                                 <div class="price__form-radio-style price__form-radio-style--gray"></div>
                             </label>
                             <label class="price__form-label">
-                                <input type="radio" class="price__form-label-radio">
+                                <input type="radio" name="radio" class="price__form-label-radio" checked>
                                 <div class="price__form-bike">
                                     <img src="images/bike-white.jpg" alt="" class="price__form-bike-img">
                                     <p class="price__form-bike-price">
-                                        32 999 сом
+                                        <span>32 999 сом</span>
                                     </p>
                                 </div>
                                 <div class="price__form-radio-style price__form-radio-style--white"></div>
                             </label>
                             <label class="price__form-label">
-                                <input type="radio" class="price__form-label-radio">
+                                <input type="radio" name="radio" class="price__form-label-radio">
                                 <div class="price__form-bike">
                                     <img src="images/bike-red.jpg" alt="" class="price__form-bike-img">
                                     <p class="price__form-bike-price">
-                                        35 999 сом
+                                        <span>35 999 сом</span>
                                     </p>
                                 </div>
                                 <div class="price__form-radio-style price__form-radio-style--red"></div>
                             </label>
                         </div>
+                        <button class="price__form-btn">Заказать</button>
                     </form>
                 </div>
+
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="images/instagram.svg" alt="" class="footer__social-img">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="images/facebook.svg" alt="" class="footer__social-img">
+                    </a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+380506777777" class="footer__contacts-link">
+                        <img src="images/phone.svg" class="footer__contacts-img" alt="">
+                        <span>
+                            +38 050 677 77 77
+                        </span>
+                    </a>
+                    <a href="mailto:elektrobikeukr@gmail.com" class="footer__contacts-link">
+                        <img src="images/mail.svg" class="footer__contacts-img" alt="">
+                        <span>
+                            elektrobikeukr@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"

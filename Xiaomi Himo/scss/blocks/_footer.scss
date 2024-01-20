@@ -1,0 +1,42 @@
+@import '../vars';
+
+.footer {
+	background-color: $dark;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+	}
+
+	&__link {
+		color: $light;
+		text-decoration: underline;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	&__social-link + &__social-link {
+		margin-left: 28px;
+	}
+
+	&__contacts {
+		color: $light;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	&__contacts-link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__contacts-link + &__contacts-link {
+		margin-top: 10px;
+	}
+
+	&__contacts-img {
+		margin-right: 10px;
+	}
+}

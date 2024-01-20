@@ -1,3 +1,132 @@
+@import '../vars';
 .price {
 	margin-bottom: 100px;
+
+	&__inner {
+		position: relative;
+	}
+	&__form {
+		max-width: 420px;
+	}
+
+	&__form-title {
+		margin-bottom: 40px;
+		font-size: 16px;
+		line-height: 19px;
+		text-transform: uppercase;
+	}
+
+	&__form-text {
+		max-width: 300px;
+		margin-bottom: 30px;
+	}
+
+	&__form-input-name,
+	&__form-input-phone {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid $dark;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		outline: none;
+	}
+
+	&__form-input-name::placeholder,
+	&__form-input-phone::placeholder,
+	&__form-color-text {
+		color: $secondary-color;
+		opacity: 0.5;
+	}
+
+	&__form-color-text {
+		margin-bottom: 10px;
+	}
+
+	&__form-label-box {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	&__form-label + &__form-label {
+		margin-left: 23px;
+	}
+
+	&__form-label-radio {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0);
+	}
+
+	&__form-bike {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&__form-label-radio:checked + &__form-bike {
+		display: block;
+	}
+
+	&__form-bike-price {
+		font-size: 32px;
+		position: absolute;
+		top: 30px;
+		right: 0;
+		left: 0;
+		width: 220px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $red-color;
+		border-radius: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__form-bike-price::after {
+		content: '';
+		position: absolute;
+		width: 220px;
+		height: 100px;
+		border: 1px solid $red-color;
+		border-radius: 50%;
+		top: 10px;
+		left: 0;
+	}
+
+	&__form-radio-style {
+		border-radius: 30px;
+		width: 80px;
+		height: 12px;
+	}
+	&__form-radio-style--gray {
+		background: $secondary-color;
+	}
+	&__form-radio-style--white {
+		background: $light;
+		border: 1px solid $secondary-color;
+	}
+	&__form-radio-style--red {
+		background: $red-color;
+	}
+
+	&__form-btn {
+		background-color: $dark;
+		padding: 28px 71px 28px 81px;
+		border: none;
+		color: $light;
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 1.1em;
+		cursor: pointer;
+		transition: all 0.4s;
+	}
+
+	&__form-btn:hover {
+		background-color: $red-color;
+	}
 }
