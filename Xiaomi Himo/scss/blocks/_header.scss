@@ -30,3 +30,11 @@
 		color: $light;
 	}
 }
+
+@media (max-width: 1024px) {
+	.header {
+		&__inner {
+			background-color: $dark;
+		}
+	}
+}
