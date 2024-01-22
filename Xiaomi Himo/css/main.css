@@ -71,11 +71,6 @@ a {
   color: #fff;
 }
 
-@media (max-width: 1024px) {
-  .header__inner {
-    background-color: #131313;
-  }
-}
 .bike {
   padding: 100px 0 0;
 }
