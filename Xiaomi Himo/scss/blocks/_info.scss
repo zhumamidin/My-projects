@@ -3,7 +3,10 @@
 .info {
 	padding-top: 150px;
 	margin-bottom: 50px;
-
+	@media (max-width: 1110px) {
+		padding-top: 35px;
+		text-align: center;
+	}
 	&__inner {
 		display: flex;
 	}
@@ -12,14 +15,26 @@
 		margin-right: 60px;
 		flex-basis: 570px;
 		object-fit: cover;
+		@media (max-width: 1110px) {
+			display: none;
+		}
 	}
 
 	&__list {
 		flex-basis: 490px;
+		@media (max-width: 1110px) {
+			flex-basis: 100%;
+		}
 	}
 
 	&__item + &__item {
 		margin-top: 50px;
+	}
+
+	&__item {
+		@media (max-width: 1110px) {
+			margin-top: 25px;
+		}
 	}
 
 	&__item-title {
@@ -31,5 +46,8 @@
 
 	&__item-text {
 		max-width: 490px;
+		@media (max-width: 1110px) {
+			max-width: 100%;
+		}
 	}
 }

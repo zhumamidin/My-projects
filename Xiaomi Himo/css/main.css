@@ -153,6 +153,8 @@ a {
   .bike__column-slider {
     max-width: 100%;
     margin-left: 0;
+    margin-bottom: 0;
+    flex-basis: 100%;
   }
 }
 .bike__title {
@@ -300,6 +302,12 @@ a {
   padding-top: 150px;
   margin-bottom: 50px;
 }
+@media (max-width: 1110px) {
+  .info {
+    padding-top: 35px;
+    text-align: center;
+  }
+}
 .info__inner {
   display: flex;
 }
@@ -309,11 +317,26 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 1110px) {
+  .info__img {
+    display: none;
+  }
+}
 .info__list {
   flex-basis: 490px;
 }
+@media (max-width: 1110px) {
+  .info__list {
+    flex-basis: 100%;
+  }
+}
 .info__item + .info__item {
   margin-top: 50px;
+}
+@media (max-width: 1110px) {
+  .info__item {
+    margin-top: 25px;
+  }
 }
 .info__item-title {
   font-size: 16px;
@@ -323,6 +346,11 @@ a {
 }
 .info__item-text {
   max-width: 490px;
+}
+@media (max-width: 1110px) {
+  .info__item-text {
+    max-width: 100%;
+  }
 }
 
 .characteristics {
