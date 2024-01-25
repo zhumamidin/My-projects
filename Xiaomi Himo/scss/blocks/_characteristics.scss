@@ -3,6 +3,10 @@
 .characteristics {
 	padding-top: 100px;
 	margin-bottom: 150px;
+	@media (max-width: 991px) {
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
 
 	&__title {
 		margin: 0 0 40px;
@@ -11,15 +15,27 @@
 
 	&__inner {
 		display: flex;
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__img {
 		align-self: center;
+		@media (max-width: 991px) {
+			order: -1;
+			width: 100%;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__items {
 		flex-basis: 570px;
 		margin-right: 60px;
+		@media (max-width: 991px) {
+			flex-basis: 100%;
+			margin-right: 0;
+		}
 	}
 
 	&__list + &__list {
@@ -42,9 +58,15 @@
 	&__name {
 		flex-basis: 285px;
 		padding-right: 25px;
+		@media (max-width: 991px) {
+			flex-basis: 50%;
+		}
 	}
 
 	&__descr {
 		flex-basis: 285px;
+		@media (max-width: 991px) {
+			flex-basis: 50%;
+		}
 	}
 }

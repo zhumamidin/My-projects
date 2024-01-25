@@ -101,6 +101,9 @@
 
 	&__link:hover {
 		background-color: $red-color;
+		@media (max-width: 991px) {
+			background-color: $dark;
+		}
 	}
 
 	&__slider .slick-dots {

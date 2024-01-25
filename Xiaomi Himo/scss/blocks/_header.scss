@@ -65,5 +65,9 @@
 	&__menu-link:hover {
 		background: $dark;
 		color: $light;
+		@media (max-width: 991px) {
+			background-color: $light;
+			color: $dark;
+		}
 	}
 }
